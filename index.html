@@ -103,7 +103,8 @@ a{ color:inherit; }
 .cats{ border-bottom:1px solid var(--line); }
 .cats ul{ list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:6px 26px; padding:18px 0; font-weight:500; }
 .cats li{ display:flex; align-items:center; gap:10px; }
-.cats li + li::before{ content:""; width:4px; height:4px; background:var(--orange); }
+.cats li::before{ content:""; width:4px; height:4px; background:var(--orange); }
+@media (max-width:439.98px){ .cats ul{ column-gap:14px; } .cats li{ gap:7px; } }
 
 /* 공통 */
 .sec{ padding:96px 0; }
