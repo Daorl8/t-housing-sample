@@ -120,6 +120,7 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
 .gal li.w{ grid-column:span 2; aspect-ratio:3/2; }
 .gal img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
 @media (hover:hover){ .gal li:hover img{ transform:scale(1.03); } }
+@media (min-width:600px) and (max-width:899.98px){ .gal{ grid-template-columns:repeat(3, minmax(0,1fr)); grid-auto-flow:dense; } .gal li.w{ grid-column:1 / -1; } }
 @media (min-width:900px){ .gal{ grid-template-columns:repeat(4, minmax(0,1fr)); } .gal li.w{ aspect-ratio:auto; } }
 
 /* 전문가 케어 */
@@ -132,6 +133,7 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
 .care li h3{ margin-top:10px; font-size:1.1rem; font-weight:600; }
 .care li p{ margin-top:6px; color:var(--soft); font-size:.95rem; }
 .care .note{ margin-top:18px; font-size:.92rem; color:var(--soft); }
+.care .note.top{ margin:0 0 14px; font-size:.95rem; font-weight:500; color:var(--ink); }
 @media (min-width:640px){ .care ol{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); } }
 @media (min-width:1024px){ .care .grid{ grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:64px; align-items:center; } }
 
@@ -216,7 +218,7 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
       <div class="intro">
         <p class="en">Jeju Interior Showroom</p>
         <h1 id="hero-h">티하우징</h1>
-        <p class="sub">인테리어의 모든 자재,<br /><span class="nw">감각적으로 연결된</span> <span class="nw">하나의 전시장</span></p>
+        <p class="sub"><span class="nw">제주 인테리어 &amp; 자재 쇼룸</span><br /><span class="nw">공간의 완성도를 높이는 티하우징</span></p>
         <div class="cta">
           <a class="btn fill" href="tel:0647212279">전화 <span class="nw">064-721-2279</span></a>
           <a class="btn" href="https://m.place.naver.com/place/2008207089/home" target="_blank" rel="noopener">네이버 플레이스</a>
@@ -243,7 +245,7 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
       <li><img src="th-g10.webp" alt="물방울 모양 거울과 간접조명이 있는 니치 전시" width="600" height="800" loading="lazy" /></li>
       <li><img src="th-g11.webp" alt="선반에 놓인 회색 톤 타일 샘플" width="600" height="800" loading="lazy" /></li>
       <li><img src="th-g12.webp" alt="쿡탑이 매립된 아일랜드와 우드 키큰장 전시" width="600" height="800" loading="lazy" /></li>
-      <li><img src="th-g13.webp" alt="주황색 T HOUSING 로고가 인쇄된 검정 종이" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g13.webp" alt="유리문 상부장과 펜던트 조명 아래 석재 상판 주방 전시" width="600" height="800" loading="lazy" /></li>
       <li><img src="th-g14.webp" alt="유리 슬라이딩 도어가 있는 쇼룸 통로" width="600" height="800" loading="lazy" /></li>
       <li><img src="th-g06.webp" alt="밝은 우드 벽 패널과 마루 샘플 전시" width="600" height="800" loading="lazy" /></li>
     </ul>
@@ -257,13 +259,14 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
         <p class="lead reveal">단순 자재 판매를 넘어, 당신의 공간이 완벽해질 때까지 함께합니다.</p>
       </div>
       <div>
+        <p class="note top reveal">자재 및 부분공사 계약 시, 혼자서는 해결하기 힘든 전문 영역을 지원합니다.</p>
         <ol>
           <li class="reveal"><span class="n">01</span><h3>3D 인테리어 설계</h3><p>머릿속 상상을 스케치업 도면으로 <span class="nw">미리 확인</span></p></li>
           <li class="reveal"><span class="n">02</span><h3>현장 감리 &amp; 공정 체크</h3><p>전문가가 직접 현장을 챙겨 시공 <span class="nw">하자 예방</span></p></li>
           <li class="reveal"><span class="n">03</span><h3>예산 및 일정 관리</h3><p>복잡한 스케줄 관리와 예산 <span class="nw">수립 대행</span></p></li>
           <li class="reveal"><span class="n">04</span><h3>검증된 업체 연결</h3><p>믿을 수 있는 시공 협력 업체 매칭</p></li>
         </ol>
-        <p class="note reveal">자재 및 부분공사 계약 시, 혼자서는 해결하기 힘든 전문 영역을 지원합니다.</p>
+        <p class="note reveal">제주 인테리어 시공과 자재 쇼룸, <span class="nw">공간의 완성도를 높이는 티하우징.</span></p>
       </div>
     </div>
   </section>
@@ -304,7 +307,7 @@ h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line
             <a class="btn" href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener">인스타그램</a>
           </div>
         </div>
-        <iframe class="map reveal" title="티하우징 위치 지도" src="https://www.google.com/maps?q=%EC%A0%9C%EC%A3%BC%EC%8B%9C+%EC%97%B0%EC%8B%A0%EB%A1%9C+217&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe class="map reveal" title="티하우징 위치 지도" src="https://www.google.com/maps?q=%EC%A0%9C%EC%A3%BC%ED%8A%B9%EB%B3%84%EC%9E%90%EC%B9%98%EB%8F%84+%EC%A0%9C%EC%A3%BC%EC%8B%9C+%EC%97%B0%EC%8B%A0%EB%A1%9C+217&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   </section>
