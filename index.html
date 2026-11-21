@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<script>document.documentElement.classList.add('js')</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>티하우징 T-HOUSING | 제주 인테리어 자재 쇼룸 · 제주시 연신로 217</title>
+<meta name="description" content="인테리어의 모든 자재, 감각적으로 연결된 하나의 전시장. 제주 인테리어 시공과 자재 쇼룸 티하우징 — 주방, 욕실, 타일, 마루, 도어를 직접 보고 비교하세요. 제주시 연신로 217 · 064-721-2279" />
+<link rel="canonical" href="https://t-housing-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="티하우징 T-HOUSING" />
+<meta property="og:title" content="티하우징 · 제주 인테리어 자재 쇼룸" />
+<meta property="og:description" content="인테리어의 모든 자재, 감각적으로 연결된 하나의 전시장." />
+<meta property="og:url" content="https://t-housing-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://t-housing-sample.lgt3232.workers.dev/og-th.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#FFFFFF" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = t-housing-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "티하우징",
+  "alternateName": "T-HOUSING",
+  "url": "https://t-housing-sample.lgt3232.workers.dev/",
+  "image": "https://t-housing-sample.lgt3232.workers.dev/og-th.jpg",
+  "telephone": "+82-64-721-2279",
+  "address": { "@type": "PostalAddress", "streetAddress": "연신로 217", "addressLocality": "제주시", "addressRegion": "제주특별자치도", "addressCountry": "KR" },
+  "openingHoursSpecification": [{ "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "09:00", "closes": "20:00" }],
+  "sameAs": ["https://www.instagram.com/t.housing_official/", "https://blog.naver.com/t-housing", "https://m.place.naver.com/place/2008207089/home"]
+}
+</script>
+<style>
+@font-face{ font-family:"TH Jost"; font-weight:400 600; font-display:swap; src:url("th-jost.woff2") format("woff2"); }
+@font-face{ font-family:"TH Sans"; font-weight:300 700; font-display:swap; src:url("th-pretendard.woff2") format("woff2"); }
+:root{
+  --white:#FFFFFF;
+  --gray:#F4F4F4;
+  --ink:#1A1A1A;
+  --ink2:#2B2B2B;
+  --soft:#5A5A5A;
+  --line:#E3E3E3;
+  --orange:#F68C1F; /* 로고색 · 장식(선 · 점 · 마크)에만 */
+  --r:2px;
+  --en:"TH Jost","TH Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --sans:"TH Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:auto; scroll-padding-top:116px; -webkit-text-size-adjust:100%; }
+body{ font-family:var(--sans); color:var(--ink); background:var(--white); line-height:1.75; font-size:16px; -webkit-font-smoothing:antialiased; word-break:keep-all; overflow-wrap:break-word; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; }
+:focus-visible{ outline:2px solid var(--ink); outline-offset:3px; }
+.hero :focus-visible, .proj :focus-visible, .foot :focus-visible{ outline-color:#FFFFFF; }
+[tabindex="-1"]:focus{ outline:none; }
+.wrap{ width:min(100% - 40px, 1200px); margin-inline:auto; }
+.nw{ white-space:nowrap; }
+.en{ font-family:var(--en); font-weight:500; letter-spacing:.18em; text-transform:uppercase; }
+
+/* 헤더 */
+.top{ position:sticky; top:0; z-index:50; background:var(--white); border-bottom:1px solid var(--line); }
+.top .bar{ display:flex; align-items:center; justify-content:space-between; gap:16px; height:62px; }
+.logo{ display:flex; align-items:center; text-decoration:none; }
+.logo img{ height:26px; width:auto; }
+@media (min-width:900px){ .logo img{ height:30px; } }
+.nav{ display:none; gap:34px; font-family:var(--en); font-weight:500; font-size:.84rem; letter-spacing:.16em; }
+.nav a{ text-decoration:none; color:var(--soft); }
+.top .btn{ display:none; }
+.snav{ display:flex; border-top:1px solid var(--line); padding:0 4px; }
+.snav a{ flex:1 1 0; display:flex; align-items:center; justify-content:center; min-height:44px; font-family:var(--en); font-weight:500; font-size:.76rem; letter-spacing:.08em; text-decoration:none; color:var(--soft); white-space:nowrap; }
+@media (min-width:900px){ .nav{ display:flex; } .snav{ display:none; } .top .btn{ display:inline-flex; min-height:40px; padding:0 18px; font-size:.88rem; } html{ scroll-padding-top:73px; } }
+@media (hover:hover){ .nav a:hover, .snav a:hover{ color:var(--ink); } }
+
+/* 버튼 */
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 22px; border-radius:var(--r); text-decoration:none; font-weight:600; font-size:.95rem; color:var(--ink); background:var(--white); border:1px solid var(--ink); transition:transform .1s, background-color .2s, color .2s; }
+.btn.fill{ background:var(--ink); color:#FFFFFF; }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:hover{ background:var(--gray); } .btn.fill:hover{ background:#000000; } }
+
+/* 히어로 (사진 풀스크린) */
+.hero{ position:relative; height:calc(100svh - 107px); min-height:560px; max-height:900px; color:#FFFFFF; overflow:hidden; }
+.hero picture, .hero picture img{ position:absolute; inset:0; width:100%; height:100%; }
+.hero picture img{ object-fit:cover; }
+.hero::after{ content:""; position:absolute; inset:0; background:linear-gradient(to top, rgba(12,12,12,.82) 0%, rgba(12,12,12,.7) 50%, rgba(12,12,12,.3) 75%, rgba(12,12,12,0) 100%); }
+.hero .wrap{ position:relative; z-index:1; height:100%; display:flex; flex-direction:column; justify-content:flex-end; padding-bottom:calc(92px + env(safe-area-inset-bottom)); }
+.hero .en{ font-size:.8rem; display:flex; align-items:center; gap:12px; }
+.hero .en::before{ content:""; width:28px; height:2px; background:var(--orange); }
+.hero h1{ margin-top:14px; font-size:clamp(1.65rem, 6.4vw, 3.1rem); font-weight:600; line-height:1.36; letter-spacing:-.015em; }
+.hero .sub{ margin-top:12px; color:#ECECEC; max-width:560px; }
+.cta{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:26px; max-width:460px; }
+.hero .btn{ background:transparent; color:#FFFFFF; border-color:#FFFFFF; }
+.hero .btn.fill{ background:#FFFFFF; color:var(--ink); }
+@media (hover:hover){ .hero .btn:hover{ background:rgba(255,255,255,.14); color:#FFFFFF; } .hero .btn.fill:hover{ background:var(--gray); color:var(--ink); } }
+@media (max-width:439.98px){ .cta{ grid-template-columns:minmax(0,1fr); } }
+@media (min-width:900px){ .hero{ height:calc(100svh - 63px); } .hero .wrap{ padding-bottom:64px; } .hero .sub{ font-size:1.05rem; } }
+
+/* 품목 띠 */
+.cats{ border-bottom:1px solid var(--line); }
+.cats ul{ list-style:none; display:flex; flex-wrap:wrap; justify-content:center; gap:6px 26px; padding:18px 0; font-weight:500; }
+.cats li{ display:flex; align-items:center; gap:10px; }
+.cats li + li::before{ content:""; width:4px; height:4px; background:var(--orange); }
+
+/* 공통 */
+.sec{ padding:96px 0; }
+.head{ margin-bottom:36px; }
+.head .en{ display:block; font-size:.82rem; color:var(--soft); }
+h2{ margin-top:10px; font-size:clamp(1.4rem, 4.8vw, 2rem); font-weight:600; line-height:1.42; letter-spacing:-.01em; }
+.lead{ color:var(--soft); }
+.lead + .lead{ margin-top:10px; }
+
+/* 쇼룸 갤러리 (화면 끝까지 · 간격 4px) */
+.gal{ list-style:none; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:4px; padding:0 4px; }
+.gal li{ position:relative; aspect-ratio:3/4; background:var(--gray); overflow:hidden; }
+.gal li.w{ grid-column:span 2; aspect-ratio:3/2; }
+.gal img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; transition:transform .6s ease; }
+@media (hover:hover){ .gal li:hover img{ transform:scale(1.03); } }
+@media (min-width:900px){ .gal{ grid-template-columns:repeat(4, minmax(0,1fr)); } .gal li.w{ aspect-ratio:auto; } }
+
+/* 전문가 케어 */
+.care{ background:var(--gray); }
+.care .grid{ display:grid; gap:40px; }
+.care ol{ list-style:none; display:grid; grid-template-columns:minmax(0,1fr); gap:10px; }
+.care li{ background:var(--white); padding:24px 22px; border-radius:var(--r); }
+.care li .n{ display:flex; align-items:center; gap:10px; font-family:var(--en); font-weight:500; font-size:.82rem; letter-spacing:.14em; color:var(--soft); }
+.care li .n::after{ content:""; width:18px; height:2px; background:var(--orange); }
+.care li h3{ margin-top:10px; font-size:1.1rem; font-weight:600; }
+.care li p{ margin-top:6px; color:var(--soft); font-size:.95rem; }
+.care .note{ margin-top:18px; font-size:.92rem; color:var(--soft); }
+@media (min-width:640px){ .care ol{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); } }
+@media (min-width:1024px){ .care .grid{ grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:64px; align-items:center; } }
+
+/* 시공 현장 (어두운 띠) */
+.proj{ background:var(--ink); color:#FFFFFF; }
+.proj .head .en{ color:#BDBDBD; }
+.proj .lead{ color:#C9C9C9; }
+.plist{ list-style:none; border-top:1px solid #4A4A4A; margin-top:8px; }
+.plist a{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:4px 16px; align-items:baseline; padding:18px 2px; border-bottom:1px solid #3A3A3A; text-decoration:none; }
+.plist b{ font-weight:600; font-size:1.05rem; }
+.plist span{ color:#C9C9C9; font-size:.92rem; grid-column:1; }
+.plist i{ grid-column:2; grid-row:1 / span 2; align-self:center; font-style:normal; font-family:var(--en); font-weight:500; font-size:.76rem; letter-spacing:.14em; color:#BDBDBD; white-space:nowrap; }
+@media (hover:hover){ .plist a:hover b{ text-decoration:underline; text-decoration-color:var(--orange); text-underline-offset:5px; } }
+@media (min-width:900px){ .plist{ display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); column-gap:48px; border-top:none; } .plist li{ border-top:1px solid #4A4A4A; } .plist li:nth-child(n+3){ border-top:none; } }
+
+/* 오시는 길 */
+.visit .grid{ display:grid; gap:36px; }
+.vinfo{ border-top:1px solid var(--ink); }
+.vinfo div{ display:grid; grid-template-columns:92px minmax(0,1fr); gap:12px; padding:16px 0; border-bottom:1px solid var(--line); }
+.vinfo dt{ font-family:var(--en); font-weight:500; font-size:.8rem; letter-spacing:.14em; color:var(--soft); padding-top:3px; }
+.vinfo dd{ font-size:.96rem; }
+.vinfo dd p + p{ margin-top:4px; }
+.vinfo .way{ color:var(--soft); }
+.visit .row{ display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:10px; margin-top:24px; }
+.visit .row .btn:first-child{ grid-column:1 / -1; }
+@media (max-width:439.98px){ .visit .row{ grid-template-columns:minmax(0,1fr); } }
+@media (max-width:339.98px){ .vinfo div{ grid-template-columns:80px minmax(0,1fr); } .vinfo dt{ letter-spacing:.08em; } }
+.map{ width:100%; height:300px; border:0; border-radius:var(--r); background:var(--gray); display:block; }
+@media (min-width:900px){ .visit .grid{ grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:64px; align-items:start; } .map{ height:100%; min-height:560px; } }
+
+/* 푸터 */
+.foot{ padding:48px 0 120px; background:#111111; color:#CFCFCF; font-size:.88rem; }
+.foot img{ height:22px; width:auto; }
+.foot p{ margin-top:6px; }
+.foot img + p{ margin-top:18px; }
+@media (min-width:900px){ .foot{ padding-bottom:48px; } }
+
+/* 모바일 하단 바 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:1.4fr 1fr 1fr; gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:var(--white); border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border-radius:var(--r); font-size:.88rem; font-weight:600; text-decoration:none; border:1px solid var(--ink); color:var(--ink); white-space:nowrap; }
+.quick a.fill{ background:var(--ink); color:#FFFFFF; }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 나타나기 (동작 줄이기 설정이어도 강제 재생 · 다올 방침) */
+.js .intro > *{ opacity:0; transform:translateY(16px); transition:opacity .8s ease, transform .8s ease; }
+.js .intro.on > *{ opacity:1; transform:none; }
+.js .intro.on > :nth-child(2){ transition-delay:.08s; }
+.js .intro.on > :nth-child(3){ transition-delay:.16s; }
+.js .intro.on > :nth-child(4){ transition-delay:.24s; }
+.js .reveal{ opacity:0; transform:translateY(18px); transition:opacity .7s ease var(--d,0s), transform .7s ease var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#top" aria-label="T HOUSING 티하우징 처음으로"><img src="th-logo.svg" alt="T HOUSING" width="181" height="43" /></a>
+    <nav class="nav" aria-label="주요 메뉴">
+      <a href="#showroom">SHOWROOM</a>
+      <a href="#care">CARE</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#visit">VISIT</a>
+    </nav>
+    <a class="btn fill" href="tel:0647212279">전화 <span class="nw">064-721-2279</span></a>
+  </div>
+  <nav class="snav" aria-label="섹션 바로가기">
+    <a href="#showroom">SHOWROOM</a>
+    <a href="#care">CARE</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#visit">VISIT</a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <picture>
+      <source media="(max-width:767.98px)" srcset="th-hero-m.webp" width="810" height="1080" />
+      <img src="th-hero.webp" alt="흰 주방가구와 넓은 아일랜드, 펜던트 조명이 있는 티하우징 쇼룸 주방 전시" width="1200" height="900" fetchpriority="high" />
+    </picture>
+    <div class="wrap">
+      <div class="intro">
+        <p class="en">Jeju Interior Showroom</p>
+        <h1 id="hero-h">인테리어의 모든 자재,<br /><span class="nw">감각적으로 연결된</span> <span class="nw">하나의 전시장.</span></h1>
+        <p class="sub">제주 인테리어 시공과 자재 쇼룸, <span class="nw">공간의 완성도를 높이는 티하우징.</span></p>
+        <div class="cta">
+          <a class="btn fill" href="tel:0647212279">전화 <span class="nw">064-721-2279</span></a>
+          <a class="btn" href="https://m.place.naver.com/place/2008207089/home" target="_blank" rel="noopener">네이버 플레이스</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cats" aria-label="쇼룸 품목">
+    <ul class="wrap"><li>주방</li><li>욕실</li><li>타일</li><li>마루</li><li>도어</li></ul>
+  </div>
+
+  <section class="sec" id="showroom" aria-labelledby="showroom-h" style="padding-bottom:4px">
+    <div class="wrap head reveal"><span class="en">Showroom</span><h2 id="showroom-h">제주주방인테리어, 욕실, 타일, 마루, 도어 등을 <span class="nw">직접 보고 비교하세요.</span></h2></div>
+    <ul class="gal">
+      <li class="w"><img src="th-g01.webp" alt="수전이 여러 개 놓인 석재 상판 아일랜드 싱크 진열대" width="1200" height="800" loading="lazy" /></li>
+      <li><img src="th-g02.webp" alt="곡선 벽과 벽걸이 세면대, 비데가 있는 욕실 전시 부스" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g03.webp" alt="아치형 개구부와 우드 슬랫 너머로 보이는 수납장 전시" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g04.webp" alt="스테인리스 싱크볼과 수전이 진열된 주방 상판" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g05.webp" alt="여러 색의 도어 샘플이 나란히 걸린 도어 전시" width="600" height="800" loading="lazy" /></li>
+      <li class="w"><img src="th-g07.webp" alt="우드 프레임과 슬랫이 있는 슬라이딩 도어 전시 부스" width="1200" height="800" loading="lazy" /></li>
+      <li><img src="th-g08.webp" alt="흰 세면대 위 무광 수전 클로즈업" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g09.webp" alt="벽걸이 세면대와 샤워 수전이 줄지어 있는 욕실 자재 전시" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g10.webp" alt="물방울 모양 거울과 간접조명이 있는 니치 전시" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g11.webp" alt="선반에 놓인 회색 톤 타일 샘플" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g12.webp" alt="쿡탑이 매립된 아일랜드와 우드 키큰장 전시" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g13.webp" alt="주황색 T HOUSING 로고가 인쇄된 검정 종이" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g14.webp" alt="유리 슬라이딩 도어가 있는 쇼룸 통로" width="600" height="800" loading="lazy" /></li>
+      <li><img src="th-g06.webp" alt="밝은 우드 벽 패널과 마루 샘플 전시" width="600" height="800" loading="lazy" /></li>
+    </ul>
+  </section>
+
+  <section class="sec care" id="care" aria-labelledby="care-h">
+    <div class="wrap grid">
+      <div>
+        <div class="head reveal" style="margin-bottom:20px"><span class="en">Expert Care</span><h2 id="care-h">제주 반셀프인테리어, <span class="nw">티하우징과 함께라면</span> <span class="nw">더 이상 혼자가 아닙니다.</span></h2></div>
+        <p class="lead reveal">자재 선정부터 시공 관리까지, 제주 반셀프인테리어의 전 과정을 전문가가 든든하게 지원해 드립니다.</p>
+        <p class="lead reveal">단순 자재 판매를 넘어, 당신의 공간이 완벽해질 때까지 함께합니다.</p>
+      </div>
+      <div>
+        <ol>
+          <li class="reveal"><span class="n">01</span><h3>3D 인테리어 설계</h3><p>머릿속 상상을 스케치업 도면으로 <span class="nw">미리 확인</span></p></li>
+          <li class="reveal"><span class="n">02</span><h3>현장 감리 &amp; 공정 체크</h3><p>전문가가 직접 현장을 챙겨 시공 <span class="nw">하자 예방</span></p></li>
+          <li class="reveal"><span class="n">03</span><h3>예산 및 일정 관리</h3><p>복잡한 스케줄 관리와 예산 <span class="nw">수립 대행</span></p></li>
+          <li class="reveal"><span class="n">04</span><h3>검증된 업체 연결</h3><p>믿을 수 있는 시공 협력 업체 매칭</p></li>
+        </ol>
+        <p class="note reveal">자재 및 부분공사 계약 시, 혼자서는 해결하기 힘든 전문 영역을 지원합니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec proj" id="projects" aria-labelledby="projects-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="en">Projects</span><h2 id="projects-h">보이는 디자인을 넘어 <span class="nw">머무는 경험까지</span> <span class="nw">함께 설계합니다.</span></h2></div>
+      <p class="lead reveal" style="margin-bottom:28px">블로그 · 인스타그램에 올린 시공 현장 일부입니다.</p>
+      <ul class="plist reveal">
+        <li><a href="https://blog.naver.com/t-housing" target="_blank" rel="noopener"><b>삼화부영</b><span>주방가구 · 붙박이장 가구시공</span><i>BLOG</i></a></li>
+        <li><a href="https://blog.naver.com/t-housing" target="_blank" rel="noopener"><b>영평동 화인퍼스트빌 15차 신축현장</b><span>주방가구 가구시공</span><i>BLOG</i></a></li>
+        <li><a href="https://blog.naver.com/t-housing" target="_blank" rel="noopener"><b>노형뜨란채</b><span>시공사례</span><i>BLOG</i></a></li>
+        <li><a href="https://blog.naver.com/t-housing" target="_blank" rel="noopener"><b>영도센스빌</b><span>반셀프인테리어 시공사례</span><i>BLOG</i></a></li>
+        <li><a href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener"><b>노형아이파크1차</b><span>리모델링</span><i>INSTAGRAM</i></a></li>
+        <li><a href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener"><b>화북주공 2단지</b><span>리모델링</span><i>INSTAGRAM</i></a></li>
+        <li><a href="https://www.instagram.com/p/DacfBvZkt_l/" target="_blank" rel="noopener"><b>삼도유화에버빌</b><span>리모델링</span><i>INSTAGRAM</i></a></li>
+        <li><a href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener"><b>부산 어센틱금융그룹 임원실</b><span>가구시공</span><i>INSTAGRAM</i></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="en">Visit</span><h2 id="visit-h">제주시 연신로 217</h2></div>
+      <div class="grid">
+        <div>
+          <dl class="vinfo reveal">
+            <div><dt>HOURS</dt><dd><p>월–토 <span class="nw">09:00 - 20:00</span></p><p class="way">정기휴무 (매주 일요일)</p></dd></div>
+            <div><dt>ADDRESS</dt><dd><p>제주 제주시 <span class="nw">연신로 217 티하우징</span></p></dd></div>
+            <div><dt>BY CAR</dt><dd><p>네비게이션에 ' 제주시 연신로 217 ' 입력하시면 정확한 위치로 안내됩니다.</p><p class="way">티하우징으로 검색하셔도 도착 가능합니다.</p><p class="way">주차공간은 건물 내 있습니다.</p></dd></div>
+            <div><dt>BUS</dt><dd><p>영평주공아파트 정류장 또는 제주영평초등학교 정류장 하차 후 정류장에서 <span class="nw">도보 3-5분</span> 거리입니다.</p></dd></div>
+            <div><dt>TAXI</dt><dd><p>연신로 217, 또는 티하우징 이라고 <span class="nw">말씀하시면 됩니다.</span></p></dd></div>
+            <div><dt>TEL</dt><dd><a href="tel:0647212279" class="nw">064-721-2279</a></dd></div>
+          </dl>
+          <div class="row reveal">
+            <a class="btn fill" href="tel:0647212279">전화 <span class="nw">064-721-2279</span></a>
+            <a class="btn" href="https://map.naver.com/p/entry/place/2008207089" target="_blank" rel="noopener">네이버 지도</a>
+            <a class="btn" href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener">인스타그램</a>
+          </div>
+        </div>
+        <iframe class="map reveal" title="티하우징 위치 지도" src="https://www.google.com/maps?q=%EC%A0%9C%EC%A3%BC%EC%8B%9C+%EC%97%B0%EC%8B%A0%EB%A1%9C+217&amp;z=17&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <img src="th-logo-w.svg" alt="T HOUSING" width="181" height="43" loading="lazy" />
+    <p>티하우징 · 제주 제주시 <span class="nw">연신로 217</span> · <a href="tel:0647212279" class="nw">064-721-2279</a></p>
+    <p>월–토 <span class="nw">09:00 - 20:00</span> · 매주 일요일 정기휴무</p>
+    <p><a href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener">@t.housing_official</a> · <a href="https://blog.naver.com/t-housing" target="_blank" rel="noopener">블로그</a> · <a href="https://m.place.naver.com/place/2008207089/home" target="_blank" rel="noopener" class="nw">네이버 플레이스</a></p>
+    <p>© T-HOUSING</p>
+  </div>
+</footer>
+
+<nav class="quick" aria-label="빠른 연결">
+  <a class="fill" href="tel:0647212279">전화 문의</a>
+  <a href="https://m.place.naver.com/place/2008207089/home" target="_blank" rel="noopener">플레이스</a>
+  <a href="https://www.instagram.com/t.housing_official/" target="_blank" rel="noopener">인스타</a>
+</nav>
+
+<script>
+(function(){
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),5)*0.07)+'s'); }
+  });
+  function showAll(){ pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; }
+  function start(){
+    var t=setInterval(function(){
+      if(!pending.length){ clearInterval(t); return; }
+      if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){ showAll(); return; }
+      var line=window.innerHeight*0.92;
+      pending=pending.filter(function(el){
+        if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+        return true;
+      });
+    },120);
+  }
+  var started=false; function go(){ if(started) return; started=true; start(); }
+  var intro=document.querySelector('.intro'); setTimeout(function(){ if(intro) intro.classList.add('on'); },60);
+  /* 부드러운 스크롤(R-25): OS '동작 줄이기'면 CSS smooth가 즉시 이동으로 바뀌어 rAF로 직접 움직임 · 1초 폴백 · 사용자 휠/터치면 중단 · 끝나면 대상 섹션으로 포커스 */
+  document.addEventListener('click',function(e){
+    var a=e.target.closest ? e.target.closest('a[href^="#"]') : null; if(!a) return;
+    var id=a.getAttribute('href'); if(id.length<2) return;
+    var t=document.querySelector(id); if(!t) return;
+    e.preventDefault();
+    var head=document.querySelector('.top'); var off=(head ? head.getBoundingClientRect().height : 0)+10;
+    var y0=window.pageYOffset; var y1=(id==='#top') ? 0 : Math.max(0, t.getBoundingClientRect().top+y0-off);
+    var dur=700, s0=null, done=false;
+    function ease(p){ return p<.5 ? 4*p*p*p : 1-Math.pow(-2*p+2,3)/2; }
+    function stop(){ done=true; window.removeEventListener('wheel',stop); window.removeEventListener('touchstart',stop); }
+    function finish(){ stop(); if(!t.hasAttribute('tabindex')){ t.setAttribute('tabindex','-1'); } t.focus({preventScroll:true}); }
+    window.addEventListener('wheel',stop,{passive:true}); window.addEventListener('touchstart',stop,{passive:true});
+    function step(ts){ if(done) return; if(s0===null) s0=ts; var p=Math.min((ts-s0)/dur,1); window.scrollTo(0, y0+(y1-y0)*ease(p)); if(p<1){ requestAnimationFrame(step); } else { finish(); } }
+    requestAnimationFrame(step);
+    setTimeout(function(){ if(!done){ window.scrollTo(0,y1); finish(); } }, dur+300);
+    if(history.pushState){ history.pushState(null,'',id); }
+  });
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(go); }
+  setTimeout(go,1200);
+})();
+</script>
+</body>
+</html>
